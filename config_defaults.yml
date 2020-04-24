@@ -97,6 +97,7 @@ common:
 .yardopts:
   markup: markdown
 appveyor.yml:
+  delete: true
   appveyor_bundle_install: "bundle install --jobs 4 --retry 2 --without system_tests"
   use_litmus: false
   matrix:
