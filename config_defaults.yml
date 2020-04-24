@@ -601,6 +601,7 @@ Gemfile:
       - gem: 'bcrypt_pbkdf'
         version: '~> 1.0'
 .gitlab-ci.yml:
+  delete: true
   defaults:
     cache:
       paths:
