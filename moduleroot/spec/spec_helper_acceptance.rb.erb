@@ -57,7 +57,7 @@ else
            else
              ENV['TARGET_HOST']
            end
-    set :host,        options[:host_name] || host
+    set :host, options[:host_name] || host
     set :ssh_options, options
     set :request_pty, true
   elsif target_in_group(inventory_hash, ENV['TARGET_HOST'], 'winrm_nodes')
@@ -70,10 +70,10 @@ else
     endpoint = "http://#{ENV['TARGET_HOST']}:5985/wsman"
 
     opts = {
-        user: user,
-        password: pass,
-        endpoint: endpoint,
-        operation_timeout: 300,
+      user: user,
+      password: pass,
+      endpoint: endpoint,
+      operation_timeout: 300,
     }
 
     winrm = WinRM::Connection.new opts
