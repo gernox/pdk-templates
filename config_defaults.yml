@@ -81,7 +81,7 @@ common:
       rvm: 2.5.7
       stage: spec
   branches:
-    - master
+    - production
     - /^v\d/
   use_litmus: true
   litmus:
