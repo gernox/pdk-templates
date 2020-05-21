@@ -37,6 +37,7 @@ common:
       - '.project'
       - '.envrc'
       - '/inventory.yaml'
+      - '.rakeTasks'
 .pdkignore:
   required: *ignorepaths
   paths:
